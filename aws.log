@@ -1,0 +1,62 @@
+Bringing machine ‘nginx’ up with ‘aws’ provider…
+==> nginx: Checking if box ‘alicankustemur/k-generic-box’ is up to date…
+==> nginx: Warning! The AWS provider doesn’t support any of the Vagrant
+==> nginx: high-level network configurations (`config.vm.network`). They
+==> nginx: will be silently ignored.
+==> nginx: Warning! You’re launching this instance into a VPC without an
+==> nginx: elastic IP. Please verify you’re properly connected to a VPN so
+==> nginx: you can access this machine, otherwise Vagrant will not be able
+==> nginx: to SSH into it.
+==> nginx: Launching an instance with the following settings…
+==> nginx: — Type: t2.nano
+==> nginx: — AMI: ami-12345678
+==> nginx: — Region: eu-west-1
+==> nginx: — Keypair: key-pair
+==> nginx: — Subnet ID: subnet-12345678
+==> nginx: — Private IP: 172.27.44.10
+==> nginx: — Security Groups: [“sg-12345678”]
+==> nginx: — Block Device Mapping: []
+==> nginx: — Terminate On Shutdown: false
+==> nginx: — Monitoring: false
+==> nginx: — EBS optimized: false
+==> nginx: — Source Destination check:
+==> nginx: — Assigning a public IP address in a VPC: false
+==> nginx: — VPC tenancy specification: default
+==> nginx: Warning! Vagrant might not be able to SSH into the instance.
+==> nginx: Please check your security groups settings.
+==> nginx: Waiting for instance to become “ready”…
+==> nginx: Waiting for SSH to become available…
+==> nginx: Machine is booted and ready for use!
+==> nginx: Rsyncing folder: /Users/alicankustemur/nginx/ => /vagrant
+==> nginx: Running provisioner: shell…
+ nginx: Running: inline script
+ nginx: Unable to find image ‘nginx:1.12’ locally
+ nginx: 1.12:
+ nginx: Pulling from library/nginx
+ nginx: 2a72cbf407d6:
+ nginx: Pulling fs layer
+ nginx: f37cbdc183b2:
+ nginx: Pulling fs layer
+ nginx: 78b5ad0b466c:
+ nginx: Pulling fs layer
+ nginx: 78b5ad0b466c:
+ nginx: Verifying Checksum
+ nginx: 78b5ad0b466c:
+ nginx: Download complete
+ nginx: f37cbdc183b2:
+ nginx: Verifying Checksum
+ nginx: f37cbdc183b2:
+ nginx: Download complete
+ nginx: 2a72cbf407d6:
+ nginx: Verifying Checksum
+ nginx: 2a72cbf407d6:
+ nginx: Download complete
+ nginx: 2a72cbf407d6:
+ nginx: Pull complete
+ nginx: f37cbdc183b2:
+ nginx: Pull complete
+ nginx: 78b5ad0b466c:
+ nginx: Pull complete
+ nginx: Digest: sha256:edad623fc7210111e8803b4359ba4854e101bcca1fe7f46bd1d35781f4034f0c
+ nginx: Status: Downloaded newer image for nginx:1.12
+ nginx: bd5e97aebf88576cd7b53068101fbfa72ec7ddd15658370539c7cf96edf102ab
